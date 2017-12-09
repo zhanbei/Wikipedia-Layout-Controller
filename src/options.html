@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style>
+		form {
+			max-width: 540px;
+		}
+
+		.hint-text {
+			color: gray;
+			font-style: italic;
+			font-size: small;
+		}
+	</style>
+	<title>Preferences</title>
+</head>
+<body>
+
+<h1>Preferences - Wikipedia Layout Controller</h1>
+
+<p>Here you can configure what you like to control the wikipedia page, for narrow monitors and wide monitors
+	respectively.</p>
+
+<div id="status"></div>
+<br>
+
+<form>
+	<fieldset>
+		<legend><h3>Overall Settings</h3></legend>
+
+		<span>Enable This Extension</span>
+		<input type="checkbox" id="isEnabled" name="isEnabled" checked/>
+		<br>
+		<span class="hint-text">If enabled, the settings below will be applied on all wikipedia(`*://*.wikipedia.org/*`) pages.</span>
+		<br>
+		<br>
+
+		<span>The Breakpoint of Screen Width:</span>
+		<input type="text" id="widthBreakpoint" name="widthBreakpoint" value="1000">
+		<br>
+		<span class="hint-text">Where `window.innerWidth > widthBreakpoint` will be used to separate wide monitors from narrow monitors.</span>
+
+	</fieldset>
+</form>
+
+<form id="narrow-monitor">
+	<fieldset>
+		<legend><h3>Preferences for Narrow Monitor</h3></legend>
+
+		<span>Limit the Width of Main Content</span>
+		<input type="checkbox" name="isLimitContentWidth" checked/>
+		<br>
+
+		<span>Max Width of the Main Content:</span>
+		<input type="text" name="contentMaxWidth" value="1000px"/>
+		<br>
+		<span class="hint-text">Only be working when the above checkbox is checked.</span>
+		<br>
+		<br>
+
+		<span>Centralize the Main Content</span>
+		<input type="checkbox" name="isCentralizeContent" checked/>
+		<br>
+
+		<span>Margin of the Main Content:</span>
+		<input type="text" name="contentMargin" value="0 auto"/>
+		<br>
+		<span class="hint-text">Only be working when the above checkbox is checked.</span>
+		<br>
+		<br>
+
+		<span>Hide the Header</span>
+		<input type="checkbox" name="isHideHeader" checked/>
+		<br>
+
+		<span>Hide Wikipedia Logo</span>
+		<input type="checkbox" name="isHideLogo" checked/>
+		<br>
+
+		<span>Hide the Side-bar Navigation</span>
+		<input type="checkbox" name="isHideNavigation" checked/>
+		<br>
+		<br>
+
+		<button id="reset-narrow-monitor" type="button">Reset Preferences of Narrow Monitor</button>
+		<br>
+		<br>
+
+	</fieldset>
+</form>
+
+<br>
+
+<form id="wide-monitor">
+	<fieldset>
+		<legend><h3>Preferences for Wide Monitor</h3></legend>
+
+		<span>Limit the Width of Main Content</span>
+		<input type="checkbox" name="isLimitContentWidth" checked/>
+		<br>
+
+		<span>Max Width of the Main Content:</span>
+		<input type="text" name="contentMaxWidth" value="1000px"/>
+		<br>
+		<span class="hint-text">Only be working when the above checkbox is checked.</span>
+		<br>
+		<br>
+
+		<span>Centralize the Main Content</span>
+		<input type="checkbox" name="isCentralizeContent" checked/>
+		<br>
+
+		<span>Margin of the Main Content:</span>
+		<input type="text" name="contentMargin" value="0 auto"/>
+		<br>
+		<span class="hint-text">Only be working when the above checkbox is checked.</span>
+		<br>
+		<br>
+
+		<span>Hide the Header</span>
+		<input type="checkbox" name="isHideHeader" checked/>
+		<br>
+
+		<span>Hide Wikipedia Logo</span>
+		<input type="checkbox" name="isHideLogo" checked/>
+		<br>
+
+		<span>Hide the Side-bar Navigation</span>
+		<input type="checkbox" name="isHideNavigation" checked/>
+		<br>
+		<br>
+
+		<button id="reset-wide-monitor" type="button">Reset Preferences of Wide Monitor</button>
+		<br>
+		<br>
+
+	</fieldset>
+</form>
+
+<br>
+
+<button id="save-preferences">Save Preferences</button>
+
+<script src="options.js"></script>
+</body>
+</html>
