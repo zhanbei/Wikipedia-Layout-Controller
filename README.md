@@ -4,6 +4,10 @@
 
 <!-- Keywords: *Wikipedia Layout Controller*. -->
 
+<!-- One line description -->
+<!-- A chrome extension to rearrange wikipedia layout to make it easier to read. -->
+
+<!-- Description -->
 A chrome extension to rearrange wikipedia layout, which 
 
 - limits the width of main content.
@@ -12,6 +16,7 @@ A chrome extension to rearrange wikipedia layout, which
 - hides the header.
 
 and follows your preferences.
+
 
 <!-- Why/Motivation -->
 ## Limit the Width of the Main Content and Centralize It on Big Monitors
