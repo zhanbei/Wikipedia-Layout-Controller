@@ -17,6 +17,9 @@ A chrome extension to rearrange wikipedia layout, which
 
 and follows your preferences.
 
+## Installation for Google Chrome
+
+- Install from [Wikipedia Layout Controller - Chrome Web Store](https://chrome.google.com/webstore/detail/wikipedia-layout-controll/klcpdbmhkpkhlhffpmpdeooehfdbdmbf)
 
 <!-- Why/Motivation -->
 ## Limit the Width of the Main Content and Centralize It on Big Monitors
